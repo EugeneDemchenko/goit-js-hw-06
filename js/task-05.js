@@ -5,6 +5,6 @@ fieldEl.addEventListener('input', onInputChange)
 
 
 function onInputChange(event) {
-    userNameEl.textContent = event.currentTarget.value    
+        event.currentTarget.value !== "" ? userNameEl.textContent = event.currentTarget.value : userNameEl.textContent = 'Anonymous'   
 }
 
