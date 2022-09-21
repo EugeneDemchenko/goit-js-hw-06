@@ -35,7 +35,7 @@ const galleryEl = document.querySelector('.gallery')
 
 const pictureEl = images.map(el => {
   const newElement = `<li>
-  <img src=${el.url} alt=${el.alt} width=480/>
+  <img src=${el.url} alt='${el.alt}' width=480/>
   </li>`
 return newElement
   
