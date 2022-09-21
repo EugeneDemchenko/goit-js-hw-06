@@ -12,6 +12,10 @@ function handleSubmit(event) {
     return alert("Empty fields! Do something!)");
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const formObj = {
+    email: email.value,
+    password: password.value,
+  }
+  console.log(formObj);
   event.currentTarget.reset();
 }
